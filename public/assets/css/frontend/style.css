@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&display=swap');
+/* body::before {
+  display: block;
+  content: '';
+  height: 60px;
+} */
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+.polygon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    z-index: 0;
+
+}
+
+.sub7{
+    background: url('/assets/images/sub7.png') no-repeat 100%;
+}
+.header-section{
+    overflow: hidden;
+    background-image: url(/assets/img/polygon.png);
+    background-repeat: no-repeat;
+    background-size: 38%;
+    background-position: right top;
+}
+.btn-primary{
+    background-color: #273588;
+    border-color: #273588;
+}
+
+sub-30 {
+    background:url(../images/sub-30.png) no-repeat;
+}
+
+.bg-gray{
+    background-color: #E5E5E5;
+}
+
+.particles{
+    position: relative;
+    bottom: -100px;
+    right: 0;
+    display: block;
+}
+
+.unlimited-primary{
+    color: #273588
+}
+
+.unlimited-secondary{
+    color: #5E6282
+}
+
+h1{
+    font-size: 4.5em;
+    font-weight: bold;
+}
+h2{
+    font-size: 3.5em;
+    font-weight: bold;
+}
+.become-vendor{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.question {
+  /* margin-left: 47px; */
+  /* margin-top: 100px; */
+}
+
+.navbar {
+  margin: auto;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.main-section {
+  top: 100px;
+  left: -117px;
+  width: 100%;
+  /* height: 110vh; */
+  background: transparent url("images/unlimited-08.png") 0% 0% no-repeat
+    padding-box;
+  opacity: 0.9;
+  background-position: center;
+  color: #ffffff;
+}
+
+.carousel {
+  top: 25%;
+}
+
+.carousel-item h1 {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.carousel-item p {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 0.8;
+  font-size: 12px;
+  font-weight: lighter;
+  width: 100%;
+}
+
+.carousel-item .button {
+  width: 130px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: none;
+  color: #101e74;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.carousel-indicator button {
+  margin-top: auto;
+  margin-bottom: 50px;
+}
+
+.box {
+  margin-left: 110px;
+  margin-top: 120px;
+}
+
+.box-image {
+  margin-top: 125px;
+  width: 98%;
+  height: 410px;
+  border: 1px solid #707070;
+}
+
+.box-image h5 {
+  color: #c4c0c0;
+  text-align: center;
+  margin: auto;
+  font-size: 12px;
+  margin-top: 200px;
+}
+
+/*SECTION WEEKLY PLAN  */
+.weekly-plan {
+  background-color: #101e74;
+  /* height: 200vh; */
+  color: #ffffff;
+}
+.recharge {
+  width: 100%;
+  padding-top: 100px;
+}
+.sub-item {
+  background-color: #ffffff1d;
+  border: none;
+  border-radius: 20px;
+}
+.sub-btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 30px;
+}
+.btn-subscribe {
+  border-radius: 30px;
+  background-color: #4ce397;
+  color: #101e74;
+}
+.super {
+  margin-top: 220px;
+}
+.super h1 {
+  text-align: left;
+  /* letter-spacing: 0px; */
+  color: #ffffff;
+  opacity: 1;
+  font-size: 45px;
+  font-weight: 800;
+}
+.super p {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 0.8;
+  font-size: 12px;
+  font-weight: lighter;
+  width: 100%;
+}
+.unlimited {
+  width: 100%;
+}
+
+/* get started */
+.section-con {
+  background-color: #4657bf;
+}
+.connect {
+  color: white;
+  text-align: center;
+}
+
+/* Faqs */
+
+.inner-icon {
+  position: relative;
+}
+
+.inner-icon input {
+  width: 100%;
+  height: 45px;
+  border-radius: 20px;
+  border: none;
+  background-color: #263695;
+  outline: none;
+  border: none;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+  padding-left: 50px;
+}
+
+/* .inner-icon input::p */
+
+.inner-icon .serc {
+  position: absolute;
+  padding: 15px;
+  pointer-events: none;
+}
+
+/* align icon */
+.serc {
+  font-size: 20px;
+  color: white;
+}
+
+footer{
+  background-color: #273588;
+}
+
+/* Accor */
+
+.accordion-item {
+  border: none !important;
+}
+
+.accordion-header button {
+  background-color: #101e74 !important;
+  color: white !important;
+  border: none;
+}
+
+.accordion-body {
+  background: #1b2c96cb 0% 0% no-repeat padding-box;
+  border: none;
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 640px) {
+  .carousel-inner h1{
+    margin-top: -10px !important;
+  }
+  .super h1{
+    margin-top: -200px !important;
+  }
+  .img-box1{
+    margin-top: -100px !important;
+  }
+  .img-box{
+    margin-top: -140px !important;
+  }
+
+  .header-section{
+    overflow: hidden;
+    background-image: url(/assets/img/polygon.png);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: right top;
+  }
+
+  .service-header{
+    background-image: url(/assets/img/services.png);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: right top;
+  }
+}
