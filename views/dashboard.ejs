@@ -29,9 +29,9 @@
 
 <div class="container-fluid mt-6">
   <div class="row">
-    <div class="col-xl-8 offset-2 mr-4">
-        <div class="card">
-          Your Dashboard
+    <div class="col-xl-6 offset-3 mr-4">
+        <div class="card p-2">
+          <h3 class="card-title m-2"> Your Dashboard</h3>
           <hr />
 
           <% if (data['user']['monoId'] ) { %>
@@ -43,102 +43,104 @@
               <hr>
             </h2>
 
-            <p class="inp w3-third w3-margin-bottom">
+           <div class="row">
+            <p class="col-6">
               TITLE:
               <span><%= dashboard['title'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               FIRST NAME:
               <span><%= dashboard['firstName'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               MIDDLE NAME:
               <span><%= dashboard['middleName'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               LAST NAME:
               <span><%= dashboard['lastName'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               PHONE NUMBER 1:
               <span><%= dashboard['phoneNumber1'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               PHONE NUMBER 2:
               <span><%= dashboard['phoneNumber2'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               EMAIL:
               <span><%= dashboard['email'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               GENDER:
               <span><%= dashboard['gender'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               LGA OF ORIGIN:
               <span><%= dashboard['lgaOfOrigin'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               LGA OF RESIDENCE:
               <span><%= dashboard['lgaOfResidence'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               MARITAL STATUS:
               <span><%= dashboard['maritalStatus'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               NIN:
               <span><%= dashboard['nin'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               NATIONALITY:
               <span><%= dashboard['nationality'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               RESIDENTIAL ADDRESS:
               <span><%= dashboard['residentialAddress'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               STATE OF ORIGIN:
               <span><%= dashboard['stateOfOrigin'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               STATE OF RESIDENCE:
               <span><%= dashboard['stateOfResidence'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               WATCH LISTED:
               <span><%= dashboard['watchListed'] %></span>
             </p>
 
-            <p class="inp w3-third w3-margin-bottom">
+            <p class="col-6">
               BVN:
               <span><%= dashboard['bvn'] %></span>
             </p>
+           </div>
 
 
 
 
           <% } else { %>
-            <div>
-              <button id="launch-btn">Link your financial account</button>
+            <div class="m-3">
+              <button id="launch-btn" class="btn btn-primary">Link your financial account</button>
             </div>
           <% } %>
         </div>
@@ -148,4 +150,24 @@
 </div>
 
 </div>
+<script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/js-cookie/js.cookie.js"></script>
+<script src="/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+<script src="/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+
+<script src="/assets/js/bootstrap-select.min.js"></script>
+<script src="/assets/js/jquery-confirm.min.js"></script>
+<script src="/assets/js/dashboard.js"></script>
+
+<%- include('partials/mono_dialog'); -%>
+
+<script type="application/javascript">
+  async function get() {
+
+  
+  }
+
+  get()
+</script>
 <%- include('partials/footer'); -%>
