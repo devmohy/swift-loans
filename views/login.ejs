@@ -77,24 +77,19 @@
     const password = form.password.value;
 
     try {
-      const options = { 
-          method: 'post',
-          headers: {
-            'Accept': 'application/json, text/plain, */*',
-            'Content-Type': 'application/json'
-          },
-          body:  JSON.stringify({ email, password })
-        }    
-
-      const res = await fetch('/login', options);
+      const res = await fetch('/login', { 
+        method: 'POST', 
+        body: JSON.stringify({ email, password }),
+        headers: {'Content-Type': 'application/json'}
+      });
 
       const data = await res.json();
       console.log(data);
 
-      // if (data.errors) {
-      //   emailError.textContent = data.errors.email;
-      //   passwordError.textContent = data.errors.password;
-      // }
+      if (data.errors) {
+        emailError.textContent = data.errors.email;
+        passwordError.textContent = data.errors.password;
+      }
 
       if (data.user) {
         location.assign('/dashboard');
