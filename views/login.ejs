@@ -77,15 +77,16 @@
     const password = form.password.value;
 
     try {
-      const res = await fetch('/login', { 
-        method: 'POST', 
-        body: JSON.stringify({ email, password }),
-        headers: {
-                  'Content-Type': 'application/json; charset=UTF-8', 
-                  'Host': 'https://*.airtableblocks.com',
-                  'Accept': 'application/json'
-                }
-      });
+      const options = { 
+          method: 'post',
+          headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+          },
+          body:  JSON.stringify({ email, password })
+        }    
+
+      const res = await fetch('/login', options);
 
       const data = await res.json();
       console.log(data);
